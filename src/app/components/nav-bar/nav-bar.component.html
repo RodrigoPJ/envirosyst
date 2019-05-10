@@ -1,11 +1,11 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>EnviroSyst</span>
-    <button mat-button color="">Informacion</button>
-    <button mat-button color="">Contacto</button>
+    <a [routerLink]="['/home/']" mat-button ><span class="mat-h2">EnviroSyst</span></a>
+    <a [routerLink]="['/home/info']" mat-button color="">Informacion</a>
+    <a [routerLink]="['/home/contact']" mat-button color="">Contacto</a>
     <span></span>
     <span class="example-spacer"></span>   
-     <button mat-button color="">Iniciar sesión</button>
+     <button mat-button (click)="openDialog()">Iniciar sesión</button>
 
     <button mat-raised-button color="accent">Registrarse</button>
     
