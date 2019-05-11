@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'src/app/services/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authenticationService:AuthenticationService,
+    private router:Router) { }
 
   ngOnInit() {
   }
-
+logOut(){
+  this.authenticationService.logOut()
+  .toPromise()
+  .then(v=>{
+    console.log(v)
+    this.router.navigate(["/home"]);
+  })
+}
 }

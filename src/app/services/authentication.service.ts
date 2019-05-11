@@ -18,16 +18,14 @@ export class AuthenticationService {
       .pipe(
         map(user=>{
           if(user && user.token){
-            localStorage.setItem('CurrentUser',JSON.stringify(user))
+            localStorage.setItem('currentUser',JSON.stringify(user))
           }
           return user;
         })
       )
     }
     logOut(){
-      localStorage.removeItem('CurrentUser');
-      this.http.get(`auth/logout`).subscribe(data=>{
-        console.log(data);
-      })
+      localStorage.removeItem('currentUser');
+      return this.http.get(`/auth/logout`);
     }
 }

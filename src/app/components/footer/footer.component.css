@@ -1,0 +1,14 @@
+.footer {
+  bottom: 5px;
+  position: fixed;
+  width: 98.5%;
+  height: 2em;
+}
+
+.spacer{
+    flex: 1 1 auto;   
+}
+
+.footer-text{
+    font-size: 0.75em
+}

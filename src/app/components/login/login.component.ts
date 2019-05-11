@@ -47,11 +47,13 @@ export class LoginComponent implements OnInit {
     .pipe(first())
     .subscribe(
       data => {
-        this.router.navigate(["/home"]);
+        this.router.navigate(["/dashboard"]);
+        this.dialogRef.close();
       },
       error => {
         this.alertService.error(error);
         this.loading = false;
+        this.onNoClick();
       }
     );
   }

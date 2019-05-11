@@ -9,6 +9,7 @@ import {RouterRoutingModule} from './router/router-routing.module'
 
 import {AuthGuard} from './guards/auth.guard';
 import {AuthenticationService} from './services/authentication.service';
+import {fakeBackeEndProvider} from './helpers/fakebackend.service';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -22,6 +23,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { InfoComponent } from './components/info/info.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MainViewComponent } from './components/main-view/main-view.component';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     InfoComponent,
     WelcomeComponent,
-    FooterComponent
+    FooterComponent,
+    MainViewComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,9 @@ import { FooterComponent } from './components/footer/footer.component';
   entryComponents: [HomeComponent,LoginComponent],
   providers: [
     AuthGuard,
-    AuthenticationService
+    AuthenticationService,
+    // fake backend remove for production
+    fakeBackeEndProvider
   ],
   bootstrap: [AppComponent]
 })

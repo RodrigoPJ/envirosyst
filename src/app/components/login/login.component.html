@@ -2,12 +2,12 @@
 <div mat-dialog-content>
     <form class="example-form" [formGroup]="loginForm"  >
         <mat-form-field class="example-full-width">
-          <input formControlName="username" matInput placeholder="Username">
+          <input autocomplete="username" formControlName="username" matInput placeholder="Username">
           <mat-error *ngIf="loginForm.invalid">username required</mat-error>
         </mat-form-field>
       
         <mat-form-field class="example-full-width">
-          <input formControlName="password" type="password" matInput placeholder="Password">
+          <input autocomplete="current-password" formControlName="password" type="password" matInput placeholder="Password">
           <mat-error *ngIf="loginForm.invalid">password required</mat-error>
         </mat-form-field>
         <mat-spinner *ngIf="loading" ></mat-spinner>
