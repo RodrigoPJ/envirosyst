@@ -1,29 +1,32 @@
-<mat-toolbar color="primary">
+<div class="example-container">
+  <mat-toolbar color="primary">
   <button mat-icon-button (click)="snav.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
-
-  <span> <strong> EnviroSyst</strong></span>
-  <button mat-button>Agua</button>
-  <button mat-button>Riesgo</button>
-  <button mat-button>Salud</button>
+<a [routerLink]="['/dashboard/']" mat-button> <span class="mat-h3">EnviroSyst</span> 
+</a>
+  <a [routerLink]="['/dashboard/program']" mat-button>Programa</a>
+  <a [routerLink]="['/dashboard/ledgers']" mat-button>Bitacoras</a>
+  <a [routerLink]="['/dashboard/analysis']" mat-button>Analisis</a>
   <span class="example-spacer"></span>
   <button mat-button [matMenuTriggerFor]="menu">
     <mat-icon>account_circle</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Preferencias</button>
+    <button color="primary" mat-menu-item>Preferencias</button>
     <button mat-menu-item (click)="logOut()">Cerrar sesion</button>
   </mat-menu>
 </mat-toolbar>
 
-<mat-sidenav-container>
+<mat-sidenav-container class="example-sidenav-container">
   <mat-sidenav #snav>
     <mat-nav-list>
       <a mat-button>Hi</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-   <app-router></app-router>
+   <router-outlet ></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+</div>

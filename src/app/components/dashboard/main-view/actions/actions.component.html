@@ -1,0 +1,58 @@
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Bitacoras del dia
+        </mat-panel-title>
+        <mat-panel-description>
+          Manejo de residuos diarios
+          <mat-icon>add_a_photo</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <input matInput placeholder="Numero de registro">
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput type="number" min="1" placeholder="#">
+      </mat-form-field>
+  
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Bitacoras semanales
+        </mat-panel-title>
+        <mat-panel-description>
+          Recoleccion camion de basura
+          <mat-icon>insert_invitation</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <input matInput placeholder="Día">
+      </mat-form-field>
+  
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Registro mensual
+        </mat-panel-title>
+        <mat-panel-description>
+          Reporte mensual de manejo de residuos
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <input matInput placeholder="Date" [matDatepicker]="picker" (focus)="picker.open()" readonly>
+      </mat-form-field>
+      <mat-datepicker #picker></mat-datepicker>
+  
+    </mat-expansion-panel>
+  
+  </mat-accordion>

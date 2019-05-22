@@ -1,0 +1,46 @@
+<div class="example-container mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+  
+    
+      <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+        </ng-container>
+    
+      
+        <ng-container matColumnDef="activity">
+          <th mat-header-cell *matHeaderCellDef> Actividad </th>
+          <td mat-cell *matCellDef="let element"> {{element.activity}} </td>
+        </ng-container>
+    
+     
+        <ng-container matColumnDef="freq">
+          <th mat-header-cell *matHeaderCellDef> Frecuencia </th>
+          <td mat-cell *matCellDef="let element"> {{element.freq}} </td>
+        </ng-container>
+    
+     
+        <ng-container matColumnDef="responsible">
+          <th mat-header-cell *matHeaderCellDef> Responsable </th>
+          <td mat-cell *matCellDef="let element"> {{element.responsible}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="fechaProgram">
+          <th mat-header-cell *matHeaderCellDef> Fecha Programada</th>
+          <td mat-cell *matCellDef="let element"> {{element.fechaProgram}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="quienRealiza">
+          <th mat-header-cell *matHeaderCellDef> Quien Realiza</th>
+          <td mat-cell *matCellDef="let element"> {{element.quienRealiza}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="fechaCumpli">
+          <th mat-header-cell *matHeaderCellDef> Fecha Cumplimiento</th>
+          <td mat-cell *matCellDef="let element"> {{element.fechaCumpli}} </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> 
+    </table>
+  </div> 
