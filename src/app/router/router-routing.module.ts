@@ -10,6 +10,10 @@ import { MainViewComponent } from "../components/dashboard/main-view/main-view.c
 import { LedgersComponent } from '../components/dashboard/ledgers/ledgers.component';
 import { ProgramComponent } from '../components/dashboard/program/program.component';
 import { AnalysisComponent } from '../components/dashboard/analysis/analysis.component';
+import { SafetyComponent } from '../components/dashboard/safety/safety.component';
+import { EnviroManageComponent } from '../components/dashboard/enviro-manage/enviro-manage.component';
+import { EnergyComponent } from '../components/dashboard/energy/energy.component';
+import { QualityComponent } from '../components/dashboard/quality/quality.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -39,17 +43,26 @@ const routes: Routes = [
       {
         path: "",
         component: MainViewComponent
-      },{
+      },
+      {
+        path:"enviro-manage",
+        component: EnviroManageComponent,
+      },
+      {
         path:"ledgers",
         component: LedgersComponent
       }
       ,{
-        path:"program",
-        component: ProgramComponent
+        path:"safety",
+        component: SafetyComponent
       }
       ,{
-        path:"analysis",
-        component: AnalysisComponent
+        path:"energy",
+        component: EnergyComponent
+      }
+      ,{
+        path:"quality",
+        component: QualityComponent
       }
     ]
   },

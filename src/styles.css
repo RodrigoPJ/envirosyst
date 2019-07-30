@@ -32,10 +32,10 @@
        `<body>` to be our scrolling element for mobile layouts. */
     flex: 1 0 auto;
   }
-  figure.mat-figure{
+   figure.mat-figure{
     align-items: normal!important;
     display: block!important;
-  }
+  } 
   .example-container {
     overflow: auto;
   }

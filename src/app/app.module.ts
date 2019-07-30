@@ -32,6 +32,10 @@ import { AnalysisComponent } from './components/dashboard/analysis/analysis.comp
 import { PieGraphComponent } from './components/dashboard/main-view/pie-graph/pie-graph.component';
 import { PendingListComponent } from './components/dashboard/main-view/pending-list/pending-list.component';
 import { ActionsComponent } from './components/dashboard/main-view/actions/actions.component';
+import { SafetyComponent } from './components/dashboard/safety/safety.component';
+import { EnviroManageComponent } from './components/dashboard/enviro-manage/enviro-manage.component';
+import { EnergyComponent } from './components/dashboard/energy/energy.component';
+import { QualityComponent } from './components/dashboard/quality/quality.component';
 
 
 @NgModule({
@@ -55,7 +59,11 @@ import { ActionsComponent } from './components/dashboard/main-view/actions/actio
     AnalysisComponent,
     PieGraphComponent,
     PendingListComponent,
-    ActionsComponent
+    ActionsComponent,
+    SafetyComponent,
+    EnviroManageComponent,
+    EnergyComponent,
+    QualityComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,24 @@
 # EnviroSystFE
 
+## Descripcion breve del proyecto
+
+Esta es una aplicacion en angular 7.2.15 y con material 7.3.7.
+
+Nace de los requerimentos legales mas comunes de las empresas en Mexico en materia de ambiental.
+
+Esta pensada para ser agnostica en cuanto al back end, teniendo en este momento
+un servicio falso de http cuyas especificaciones se pueden cumplir en cualquier lenguaje de servidor.
+
+dependencies besides angular and material related:
+
+* [ngx-charts](https://swimlane.github.io/ngx-charts/#/ngx-charts/pie-chart)  for charts
+[its docs are at](https://swimlane.gitbook.io/ngx-charts/examples/pie-charts/advanced-pie-chart)
+
+* momentjs no need for introduction
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
+
+Later updated to 7.2.15
 
 ## Development server
 

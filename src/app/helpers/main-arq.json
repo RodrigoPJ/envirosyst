@@ -1,0 +1,102 @@
+{
+  "company-info": {
+    "name": "compañia1",
+    "_id": "878977",
+    "datoImportante": {}
+  },
+  "personal-info": {
+    "fistName": "Rod",
+    "lastName": "P",
+    "clearance": "superuser",
+    "position": "admin executive",
+    "datoImportante": {}
+  },
+  "gestion-ambiental": {
+    "aspectos-ambientales": [
+      {
+        "aspect": "Aire",
+        "data": {
+          "type": "tree",
+          "req-leg": [{ "leyes": "leyes aplicables" }],
+          "programa-ambiental": [
+            {
+              "pName": "indicadores ambientales",
+              "type": "dataList",
+              "data": [{}]
+            },
+            {
+              "pName": "fuentes-fijas",
+              "type": "fileList",
+              "data": [{ "file1": "archivo1 para fuentes fijas" }]
+            },
+            {
+              "pName": "fuentes-moviles",
+              "type": "fileList",
+              "data": [{ "file1": "archivo1 para fuentes moviles" }]
+            },
+            {
+              "pName": "analisisLab",
+              "type": "fileList",
+              "data": [{ "file1": "archivo1 analisis de laboratorio Aire" }]
+            },
+            {
+              "pName": "verificacion-vehicular",
+              "type": "schedule",
+              "data": {
+                "files": [
+                  "archivo1 para fuentes moviles",
+                  "archivo1 para fuentes moviles"
+                ],
+                "text": "programa de verificacion vehicular",
+                "dates": ["26/12/86", "30/05/2019"]
+              }
+            },
+            { "pName":"bitacoras-ops",
+              "type":"ledgerList",
+              "data": ["id de bitacoras", "otro id de ota bitacora"] },
+            {
+              "mantenimiento": {
+                "fuentes-fijas": "mantenimiento de fuentes fijas",
+                "equipo-anticontaminante": "mantenimiento a equipo anticontaminante",
+                "vehiculos": "mantenimiento de vehiculos"
+              }
+            },
+            { "atencionEmerg": "plan para emergencias de aire" },
+            { "sustAgotdeO3": "plan para no agotar el O3" },
+            { "fuentesFugit": "fugitivas y calculo de factores de emision" },
+            { "gasesEfectoIvernadero": "inventario calculo de emisiones" }
+          ],
+          "capacitacion": "Programa de capacitacion"
+        }
+      },
+      {
+        "aspect": "agua",
+        "req-leg": []
+      },
+      {
+        "aspect": "ruido",
+        "req-leg": []
+      },
+      {
+        "aspect": "residuos",
+        "req-leg": []
+      },
+      {
+        "aspect": "suelo",
+        "req-leg": []
+      },
+      {
+        "aspect": "recursos naturales",
+        "req-leg": []
+      },
+      {
+        "aspect": "sustancias quimicas",
+        "req-leg": []
+      },
+      {
+        "aspect": "atencion a emergencias",
+        "req-leg": []
+      }
+    ]
+  }
+}
