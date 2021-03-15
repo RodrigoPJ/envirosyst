@@ -118,6 +118,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_dashboard_main_view_pie_graph_pie_graph_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/dashboard/main-view/pie-graph/pie-graph.component */ "./src/app/components/dashboard/main-view/pie-graph/pie-graph.component.ts");
 /* harmony import */ var _components_dashboard_main_view_pending_list_pending_list_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/dashboard/main-view/pending-list/pending-list.component */ "./src/app/components/dashboard/main-view/pending-list/pending-list.component.ts");
 /* harmony import */ var _components_dashboard_main_view_actions_actions_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/dashboard/main-view/actions/actions.component */ "./src/app/components/dashboard/main-view/actions/actions.component.ts");
+/* harmony import */ var _components_dashboard_safety_safety_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/dashboard/safety/safety.component */ "./src/app/components/dashboard/safety/safety.component.ts");
+/* harmony import */ var _components_dashboard_enviro_manage_enviro_manage_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/dashboard/enviro-manage/enviro-manage.component */ "./src/app/components/dashboard/enviro-manage/enviro-manage.component.ts");
+/* harmony import */ var _components_dashboard_energy_energy_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/dashboard/energy/energy.component */ "./src/app/components/dashboard/energy/energy.component.ts");
+/* harmony import */ var _components_dashboard_quality_quality_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/dashboard/quality/quality.component */ "./src/app/components/dashboard/quality/quality.component.ts");
+
+
+
+
 
 
 
@@ -175,7 +183,11 @@ var AppModule = /** @class */ (function () {
                 _components_dashboard_analysis_analysis_component__WEBPACK_IMPORTED_MODULE_28__["AnalysisComponent"],
                 _components_dashboard_main_view_pie_graph_pie_graph_component__WEBPACK_IMPORTED_MODULE_29__["PieGraphComponent"],
                 _components_dashboard_main_view_pending_list_pending_list_component__WEBPACK_IMPORTED_MODULE_30__["PendingListComponent"],
-                _components_dashboard_main_view_actions_actions_component__WEBPACK_IMPORTED_MODULE_31__["ActionsComponent"]
+                _components_dashboard_main_view_actions_actions_component__WEBPACK_IMPORTED_MODULE_31__["ActionsComponent"],
+                _components_dashboard_safety_safety_component__WEBPACK_IMPORTED_MODULE_32__["SafetyComponent"],
+                _components_dashboard_enviro_manage_enviro_manage_component__WEBPACK_IMPORTED_MODULE_33__["EnviroManageComponent"],
+                _components_dashboard_energy_energy_component__WEBPACK_IMPORTED_MODULE_34__["EnergyComponent"],
+                _components_dashboard_quality_quality_component__WEBPACK_IMPORTED_MODULE_35__["QualityComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -372,6 +384,118 @@ var DashboardComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/dashboard/energy/energy.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/components/dashboard/energy/energy.component.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGFzaGJvYXJkL2VuZXJneS9lbmVyZ3kuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/energy/energy.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/dashboard/energy/energy.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  energy works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/energy/energy.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/dashboard/energy/energy.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: EnergyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnergyComponent", function() { return EnergyComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var EnergyComponent = /** @class */ (function () {
+    function EnergyComponent() {
+    }
+    EnergyComponent.prototype.ngOnInit = function () {
+    };
+    EnergyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-energy',
+            template: __webpack_require__(/*! ./energy.component.html */ "./src/app/components/dashboard/energy/energy.component.html"),
+            styles: [__webpack_require__(/*! ./energy.component.css */ "./src/app/components/dashboard/energy/energy.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], EnergyComponent);
+    return EnergyComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/enviro-manage/enviro-manage.component.css":
+/*!********************************************************************************!*\
+  !*** ./src/app/components/dashboard/enviro-manage/enviro-manage.component.css ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGFzaGJvYXJkL2Vudmlyby1tYW5hZ2UvZW52aXJvLW1hbmFnZS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/enviro-manage/enviro-manage.component.html":
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/dashboard/enviro-manage/enviro-manage.component.html ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  enviro-manage works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/enviro-manage/enviro-manage.component.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/app/components/dashboard/enviro-manage/enviro-manage.component.ts ***!
+  \*******************************************************************************/
+/*! exports provided: EnviroManageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnviroManageComponent", function() { return EnviroManageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var EnviroManageComponent = /** @class */ (function () {
+    function EnviroManageComponent() {
+    }
+    EnviroManageComponent.prototype.ngOnInit = function () {
+    };
+    EnviroManageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-enviro-manage',
+            template: __webpack_require__(/*! ./enviro-manage.component.html */ "./src/app/components/dashboard/enviro-manage/enviro-manage.component.html"),
+            styles: [__webpack_require__(/*! ./enviro-manage.component.css */ "./src/app/components/dashboard/enviro-manage/enviro-manage.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], EnviroManageComponent);
+    return EnviroManageComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/dashboard/ledgers/ledger/ledger.component.css":
 /*!**************************************************************************!*\
   !*** ./src/app/components/dashboard/ledgers/ledger/ledger.component.css ***!
@@ -502,7 +626,7 @@ module.exports = ".example-headers-align .mat-expansion-panel-header-title,\n.ex
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-accordion class=\"example-headers-align\">\n    <mat-expansion-panel [expanded]=\"step === 0\" (opened)=\"setStep(0)\" hideToggle>\n      <mat-expansion-panel-header>\n        <mat-panel-title>\n          Bitacoras del dia\n        </mat-panel-title>\n        <mat-panel-description>\n          Manejo de residuos diarios\n          <mat-icon>add_a_photo</mat-icon>\n        </mat-panel-description>\n      </mat-expansion-panel-header>\n  \n      <mat-form-field>\n        <input matInput placeholder=\"Numero de registro\">\n      </mat-form-field>\n  \n      <mat-form-field>\n        <input matInput type=\"number\" min=\"1\" placeholder=\"#\">\n      </mat-form-field>\n  \n    </mat-expansion-panel>\n  \n    <mat-expansion-panel [expanded]=\"step === 1\" (opened)=\"setStep(1)\" hideToggle>\n      <mat-expansion-panel-header>\n        <mat-panel-title>\n          Bitacoras semanales\n        </mat-panel-title>\n        <mat-panel-description>\n          Recoleccion camion de basura\n          <mat-icon>insert_invitation</mat-icon>\n        </mat-panel-description>\n      </mat-expansion-panel-header>\n  \n      <mat-form-field>\n        <input matInput placeholder=\"Día\">\n      </mat-form-field>\n  \n    </mat-expansion-panel>\n  \n    <mat-expansion-panel [expanded]=\"step === 2\" (opened)=\"setStep(2)\" hideToggle>\n      <mat-expansion-panel-header>\n        <mat-panel-title>\n          Registro mensual\n        </mat-panel-title>\n        <mat-panel-description>\n          Reporte mensual de manejo de residuos\n          <mat-icon>date_range</mat-icon>\n        </mat-panel-description>\n      </mat-expansion-panel-header>\n  \n      <mat-form-field>\n        <input matInput placeholder=\"Date\" [matDatepicker]=\"picker\" (focus)=\"picker.open()\" readonly>\n      </mat-form-field>\n      <mat-datepicker #picker></mat-datepicker>\n  \n    </mat-expansion-panel>\n  \n  </mat-accordion>"
+module.exports = "<ul>\n  <li>\n    <mat-icon>assignment_ind</mat-icon>\n    <span>\n      Juan Perez hizo una anotacion en la bitacora agua 1\n    </span>\n  </li>\n</ul>"
 
 /***/ }),
 
@@ -629,7 +753,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-list>\n  <h3 mat-list-header>Documentos pendientes</h3>\n\n  <mat-list-item *ngFor=\"let activity of activities\">\n    <mat-icon matListIcon>assignment</mat-icon>\n    <h3 matLine>{{ activity.date }}</h3>\n    <p matLine>\n      <span> {{ activity.resposible }} </span>\n      <span class=\"demo-2\"> -- {{ activity.action }} </span>\n    </p>\n    <p matLine>\n      <span class=\"demo-2\"> -- {{ activity.file }} </span>\n    </p>\n  </mat-list-item>\n</mat-list>\n"
+module.exports = "<mat-list>\n  <h3 mat-list-header>Documentos pendientes</h3>\n\n  <mat-list-item *ngFor=\"let activity of activities\">\n    <mat-icon matListIcon>assignment</mat-icon>\n    <h3 matLine>{{ activity.date }}</h3>\n    <p matLine>\n      <span> {{ activity.resposible }} </span>\n      <span class=\"demo-2\"> -- {{ activity.action }} </span>\n    </p>\n    <p matLine>\n      <a >\n        <span class=\"demo-2\"> -- {{ activity.file }} </span>\n      </a>\n    </p>\n  </mat-list-item>\n</mat-list>\n"
 
 /***/ }),
 
@@ -834,6 +958,118 @@ var acciones = [
 
 /***/ }),
 
+/***/ "./src/app/components/dashboard/quality/quality.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/dashboard/quality/quality.component.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGFzaGJvYXJkL3F1YWxpdHkvcXVhbGl0eS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/quality/quality.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/dashboard/quality/quality.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  quality works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/quality/quality.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/dashboard/quality/quality.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: QualityComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QualityComponent", function() { return QualityComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var QualityComponent = /** @class */ (function () {
+    function QualityComponent() {
+    }
+    QualityComponent.prototype.ngOnInit = function () {
+    };
+    QualityComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-quality',
+            template: __webpack_require__(/*! ./quality.component.html */ "./src/app/components/dashboard/quality/quality.component.html"),
+            styles: [__webpack_require__(/*! ./quality.component.css */ "./src/app/components/dashboard/quality/quality.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], QualityComponent);
+    return QualityComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/safety/safety.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/components/dashboard/safety/safety.component.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGFzaGJvYXJkL3NhZmV0eS9zYWZldHkuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/safety/safety.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/dashboard/safety/safety.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  safety works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/safety/safety.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/dashboard/safety/safety.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: SafetyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SafetyComponent", function() { return SafetyComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var SafetyComponent = /** @class */ (function () {
+    function SafetyComponent() {
+    }
+    SafetyComponent.prototype.ngOnInit = function () {
+    };
+    SafetyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-safety',
+            template: __webpack_require__(/*! ./safety.component.html */ "./src/app/components/dashboard/safety/safety.component.html"),
+            styles: [__webpack_require__(/*! ./safety.component.css */ "./src/app/components/dashboard/safety/safety.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], SafetyComponent);
+    return SafetyComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/dashboard/toolbar/toolbar.component.css":
 /*!********************************************************************!*\
   !*** ./src/app/components/dashboard/toolbar/toolbar.component.css ***!
@@ -852,7 +1088,7 @@ module.exports = ".example-container {\n    display: flex;\n    flex-direction: 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-container\">\n  <mat-toolbar color=\"primary\">\n  <button mat-icon-button (click)=\"snav.toggle()\">\n    <mat-icon>menu</mat-icon>\n  </button>\n<a [routerLink]=\"['/dashboard/']\" mat-button> <span class=\"mat-h3\">EnviroSyst</span> \n</a>\n  <a [routerLink]=\"['/dashboard/program']\" mat-button>Programa</a>\n  <a [routerLink]=\"['/dashboard/ledgers']\" mat-button>Bitacoras</a>\n  <a [routerLink]=\"['/dashboard/analysis']\" mat-button>Analisis</a>\n  <span class=\"example-spacer\"></span>\n  <button mat-button [matMenuTriggerFor]=\"menu\">\n    <mat-icon>account_circle</mat-icon>\n  </button>\n  <mat-menu #menu=\"matMenu\">\n    <button color=\"primary\" mat-menu-item>Preferencias</button>\n    <button mat-menu-item (click)=\"logOut()\">Cerrar sesion</button>\n  </mat-menu>\n</mat-toolbar>\n\n<mat-sidenav-container class=\"example-sidenav-container\">\n  <mat-sidenav #snav>\n    <mat-nav-list>\n      <a mat-button>Hi</a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n   <router-outlet ></router-outlet>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n\n</div>\n"
+module.exports = "<div class=\"example-container\">\n  <mat-toolbar color=\"primary\">\n  <button mat-icon-button (click)=\"snav.toggle()\">\n    <mat-icon>menu</mat-icon>\n  </button>\n<a [routerLink]=\"['/dashboard/']\" mat-button> <span class=\"mat-h3\">EnviroSyst</span> \n</a>\n  <a [routerLink]=\"['/dashboard/enviro-manage']\" mat-button>Ambiental</a>\n  <a [routerLink]=\"['/dashboard/ledgers']\" mat-button>Bitacoras</a>\n  <a [routerLink]=\"['/dashboard/safety']\" mat-button>Seguridad</a>\n  <a [routerLink]=\"['/dashboard/energy']\" mat-button>Energía</a>\n  <a [routerLink]=\"['/dashboard/quality']\" mat-button>Calidad</a>\n  <span class=\"example-spacer\"></span>\n  <button mat-button [matMenuTriggerFor]=\"menu\">\n    <mat-icon>account_circle</mat-icon>\n  </button>\n  <mat-menu #menu=\"matMenu\">\n    <button color=\"primary\" mat-menu-item>Preferencias</button>\n    <button mat-menu-item (click)=\"logOut()\">Cerrar sesion</button>\n  </mat-menu>\n</mat-toolbar>\n\n<mat-sidenav-container class=\"example-sidenav-container\">\n  <mat-sidenav #snav>\n    <mat-nav-list>\n      <a mat-button>Hi</a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n   <router-outlet ></router-outlet>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n\n</div>\n"
 
 /***/ }),
 
@@ -1522,7 +1758,6 @@ var FakebackendService = /** @class */ (function () {
                         body: { message: 'sesion cerrada' },
                     }));
             }
-            //  return;
         }))
             // add some delay to test loading elements and better feel
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["materialize"])())
@@ -1656,8 +1891,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_web_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/web/welcome/welcome.component */ "./src/app/components/web/welcome/welcome.component.ts");
 /* harmony import */ var _components_dashboard_main_view_main_view_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/dashboard/main-view/main-view.component */ "./src/app/components/dashboard/main-view/main-view.component.ts");
 /* harmony import */ var _components_dashboard_ledgers_ledgers_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/dashboard/ledgers/ledgers.component */ "./src/app/components/dashboard/ledgers/ledgers.component.ts");
-/* harmony import */ var _components_dashboard_program_program_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/dashboard/program/program.component */ "./src/app/components/dashboard/program/program.component.ts");
-/* harmony import */ var _components_dashboard_analysis_analysis_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/dashboard/analysis/analysis.component */ "./src/app/components/dashboard/analysis/analysis.component.ts");
+/* harmony import */ var _components_dashboard_safety_safety_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/dashboard/safety/safety.component */ "./src/app/components/dashboard/safety/safety.component.ts");
+/* harmony import */ var _components_dashboard_enviro_manage_enviro_manage_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/dashboard/enviro-manage/enviro-manage.component */ "./src/app/components/dashboard/enviro-manage/enviro-manage.component.ts");
+/* harmony import */ var _components_dashboard_energy_energy_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/dashboard/energy/energy.component */ "./src/app/components/dashboard/energy/energy.component.ts");
+/* harmony import */ var _components_dashboard_quality_quality_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/dashboard/quality/quality.component */ "./src/app/components/dashboard/quality/quality.component.ts");
+
+
 
 
 
@@ -1699,17 +1938,26 @@ var routes = [
             {
                 path: "",
                 component: _components_dashboard_main_view_main_view_component__WEBPACK_IMPORTED_MODULE_9__["MainViewComponent"]
-            }, {
+            },
+            {
+                path: "enviro-manage",
+                component: _components_dashboard_enviro_manage_enviro_manage_component__WEBPACK_IMPORTED_MODULE_12__["EnviroManageComponent"],
+            },
+            {
                 path: "ledgers",
                 component: _components_dashboard_ledgers_ledgers_component__WEBPACK_IMPORTED_MODULE_10__["LedgersComponent"]
             },
             {
-                path: "program",
-                component: _components_dashboard_program_program_component__WEBPACK_IMPORTED_MODULE_11__["ProgramComponent"]
+                path: "safety",
+                component: _components_dashboard_safety_safety_component__WEBPACK_IMPORTED_MODULE_11__["SafetyComponent"]
             },
             {
-                path: "analysis",
-                component: _components_dashboard_analysis_analysis_component__WEBPACK_IMPORTED_MODULE_12__["AnalysisComponent"]
+                path: "energy",
+                component: _components_dashboard_energy_energy_component__WEBPACK_IMPORTED_MODULE_13__["EnergyComponent"]
+            },
+            {
+                path: "quality",
+                component: _components_dashboard_quality_quality_component__WEBPACK_IMPORTED_MODULE_14__["QualityComponent"]
             }
         ]
     },
@@ -1875,7 +2123,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/rodp/Documents/envirosyst/envirosyst/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/rodrigopena/Documents/envirosyst/src/main.ts */"./src/main.ts");
 
 
 /***/ })
